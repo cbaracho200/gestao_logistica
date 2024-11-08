@@ -18,7 +18,7 @@ import os
 
 st.set_page_config(page_title="Logístic GPT-App", page_icon="🔎",layout="wide", initial_sidebar_state="expanded")
 
-GROQ_API_KEY= "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"
+GROQ_API_KEY= st.secrets["GROQ_API_KEY"]
 st.title("Logístic GPT-App")
 st.divider()
 client = Groq(api_key=GROQ_API_KEY)
